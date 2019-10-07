@@ -1,0 +1,43 @@
+.table-container {
+
+    margin-top: 30px;
+
+    .tb-inside {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(158, 172, 196, 0.25);
+        margin-top: 30px;
+
+    }
+
+    &__btn-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        button {
+            border-radius: 12px;
+            box-shadow: none;
+
+            color: #7E60FA;
+        }
+
+    }
+}
+
+
+
+table {
+    width: 100%;
+
+    .row-students {
+        cursor: pointer;
+        transition: all 150ms;
+
+        &:hover {
+            background: #f4f4f4;
+
+
+        }
+    }
+}

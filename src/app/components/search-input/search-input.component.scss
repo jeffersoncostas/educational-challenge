@@ -1,0 +1,32 @@
+section {
+
+    border-radius: 12px;
+    background-color: #7E60FA;
+    display: flex;
+    width: 530px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(127, 135, 148);
+
+    input {
+        background: transparent;
+        outline: none;
+        color: white;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        padding: 10px 20px;
+
+
+        &::placeholder {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.623);
+
+        }
+    }
+}
+
+app-button-toggle {
+    display: block;
+
+    box-shadow: 9px 0px 8px rgba(0, 0, 0, 0.19);
+}

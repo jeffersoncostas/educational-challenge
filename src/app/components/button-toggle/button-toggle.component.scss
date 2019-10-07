@@ -1,0 +1,21 @@
+mat-button-toggle-group {
+    border-radius: 0px;
+    border: none;
+    height: 100%;
+
+    mat-button-toggle {
+        background: #3A415E;
+        color: white;
+
+        &.mat-button-toggle-checked {
+
+            background: white;
+            color: #7E60FA;
+        }
+    }
+
+    .mat-button-toggle-disabled {
+        border: 1px solid #c5c0c7;
+        background-color: #e1dde5;
+    }
+}

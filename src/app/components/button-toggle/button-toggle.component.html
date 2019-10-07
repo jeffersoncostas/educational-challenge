@@ -1,0 +1,18 @@
+<mat-button-toggle-group [(ngModel)]="filterValue" class="filter" (valueChange)="emitFilterValue($event)">
+    <mat-button-toggle class="filter" value="id" aria-label="Text align left">
+        Id
+    </mat-button-toggle>
+    <mat-button-toggle value="name" selected aria-label="Text align center">
+        Nome
+    </mat-button-toggle>
+    <mat-button-toggle value="ra" aria-label="Text align right">
+        RA
+    </mat-button-toggle>
+    <mat-button-toggle value="degreeName" aria-label="Text align justify">
+        Degree
+    </mat-button-toggle>
+    <mat-button-toggle value="className" aria-label="Text align justify">
+        Class
+    </mat-button-toggle>
+
+</mat-button-toggle-group>

@@ -1,0 +1,27 @@
+<h1 mat-dialog-title> {{data.otherData.title}} </h1>
+<div mat-dialog-content>
+    <mat-form-field>
+        <input placeholder="Student Name" matInput [(ngModel)]="data.student.name">
+    </mat-form-field>
+</div>
+<mat-form-field>
+    <mat-label>Degree</mat-label>
+    <mat-select [(value)]="data.student.degreeId">
+        <mat-option *ngFor="let degree of degress " [value]="degree.id">
+            {{degree.name}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Class</mat-label>
+    <mat-select [(value)]="data.student.classId">
+        <mat-option *ngFor="let class of classes" [value]="class.id">
+            {{class.name}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<div mat-dialog-actions>
+    <button mat-button (click)="onClose()">No Thanks</button>
+    <button mat-button cdkFocusInitial (click)="confirmEdit()">Ok</button>
+</div>
